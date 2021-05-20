@@ -36,3 +36,41 @@
     transform: rotate(360deg);
   }
 }
+
+.cards-container {
+  flex-wrap: wrap;
+  padding: 15px;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.character-card {
+  width: 180px;
+  height: 250px;
+  border-radius: 5px;
+  border: #282c34 solid ;
+  margin: 10px 5px;
+}
+
+.character-card_image {
+  width: 160px;
+}
+
+.character-card_name {
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-margin {
+  margin: 0px;
+}
