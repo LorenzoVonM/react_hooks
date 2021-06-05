@@ -1,9 +1,11 @@
 
 import {useState} from 'react';
 import '../assessment.css';
+import DarkMode from '../styles/DarkMode'
 
 export default function Header() {
-    const [darkMode, setDarkMode] = useState(false);
+
+    let [darkMode, toogleDarkMode] = DarkMode()
 
     return (
         <div>
@@ -12,7 +14,7 @@ export default function Header() {
             </h1>
             <button 
                 type='button' 
-                onClick= { _ => setDarkMode(!darkMode) }
+                onClick= { _ => toogleDarkMode() }
             >
                 Go to {darkMode ? 'Dark mode': 'Light mode'}
             </button>
