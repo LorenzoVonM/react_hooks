@@ -17,7 +17,7 @@ function Characters() {
       </div>
       <div className='flex cards-container'>
           {characters.map(character => (
-            <CharacterCard data={character} ></CharacterCard>
+            <CharacterCard key={character.id} data={character} ></CharacterCard>
           ))}
       </div>
     </div>
